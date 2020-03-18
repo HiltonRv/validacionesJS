@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+        <FORM name="formulario" action="#" method="post" onSubmit="return validarfor();">
+                <p>Destinatario:</p>     
+                <SELECT NAME="lista">
+                <OPTION SELECTED>Sr
+                <OPTION>Sra.
+                </SELECT>
+                <br>
+            
+                <label for="nombres"><p>*Apellido y nombre: </p></label><br>
+                <INPUT TYPE="text"  id="nombres" name="nombres">
+                <br>
+            
+                <label for="razonsocial"><p>*Razon Social:</p></label>
+                <INPUT class="razon" TYPE="text"  id="razonsocial" name="razonsocial">
+                <br>
+            
+                <label for="mail"><p>*Email:</p></label>
+                <INPUT TYPE="email" id="mail">
+                <br>
+            
+                <label for="telefono"><p>*Telefono:</p></label>
+                <INPUT TYPE="tel"  id="telefono" name="telefono">
+                <br>
+            
+                <label for="celular"><p>*Celular:</p></label>
+                <INPUT TYPE="tel"  id="celular" name="celular">
+                <br>
+            
+                <p>Via de contacto:</p>
+                <SELECT NAME="viadecontacto" >
+                <OPTION SELECTED>Email
+                <OPTION>Telefono
+                <OPTION>Celular
+                </SELECT>
+                <br>
+            
+                <label for="comentarios"><p>*Comentarios:</p></label>
+                <textarea  id="comentarios" rows="10" cols="40" maxlength="300" name="comentarios">Escribe aquí tus comentarios</textarea>
+                <br>
+            
+                <input type="submit" name="commit" value="Enviar">
+            </form>
+
+            <script src="validacionesjs.js"></script>
+            <script src="jquery.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

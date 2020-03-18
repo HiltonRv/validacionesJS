@@ -1,0 +1,72 @@
+<!DOCTYPE >
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Ejemplo</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Validación de formularios con Bootstrap 4</h1>
+    <form class="container " id="needs-validation" novalidate>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom01">Nombre</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Nombres" value="" required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom02">Apellidos</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Apellidos" value="" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">Ciudad</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="Ciudad" required>
+      <div class="invalid-feedback">
+        Ingresa datos
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">Estado</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="Estado" required>
+      <div class="invalid-feedback">
+        Ingresa datos
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom05">CP</label>
+      <input type="text" class="form-control" id="validationCustom05" placeholder="CP" required>
+      <div class="invalid-feedback">
+        Ingresa datos
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+    <script src="jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="register.js"></script>
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+
+  window.addEventListener('load', function() {
+    var form = document.getElementById('needs-validation');
+    form.addEventListener('submit', function(event) {
+      if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  }, false);
+})();
+</script>        
+    </div>
+</body>
+</html>
